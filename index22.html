@@ -11,7 +11,7 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <!-- Styles CSS sheet -->
-  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,11 +63,11 @@
     <!-- <h2>conocenos derecha 1/2</h2>
     <p>titulo arriba</p>
     <p>twxto abajo</p> -->
-    <div class="container-fluid row about">
-      <div class="space-container col-md-6">
-        <!-- <img class="imgwork1" src="images/New-employee-rafiki.png" alt=""> -->
-      </div>
-      <div class="about-container col-md-6">
+    <div class="about">
+      <!-- <div class="space-container">
+
+      </div> -->
+      <div class="aboutcontainer">
         <h3 class="about-title">Conocenos!</h3>
         <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ut doloremque
           temporibus beatae error, dicta quam ab voluptate, perspiciatis hic nesciunt ratione. Officiis nisi veniam ea.
@@ -84,16 +84,17 @@
     <button>liquidacion de sueldos -> ventana con texto descriptivo y abajo, mailto</button>
     <button>Comunicacion organizacional -> ventana con texto descriptivo y abajo, mailto</button>
     <p>breve descripcion con titulo "Servicios"</p> -->
-    <div class="container-fluid row servicios">
-      <div class="servicios-container col-md-6">
+    <div class="servicios">
+      <div class="servicioscontainer">
         <h3 class="servicios-title">Servicios</h3>
         <div class="botones-servicios">
           <!-- <a href="mailto: jessicrepollo@gmail.com?subject=Revision%20de%20CV%20gratuita">Revisar CV Gratis</a> -->
 
           <!-- Button trigger modal Seleccion de personal-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-            Seleccion de Personal
+          <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            <p>Seleccion de Personal</p>
           </button>
+          
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel1" aria-hidden="true">
@@ -118,8 +119,8 @@
           </div>
 
           <!-- Button trigger modal Liquidación de sueldos-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-            Sueldos
+          <button type="button" class="btn btn-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            <p>Liquidación de Sueldos</p>
           </button>
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -145,9 +146,10 @@
           </div>
 
           <!-- Button trigger modal Seleccion de personal-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-            In Corp
+          <button type="button" class="btn btn-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+            <p>Comunicación Organizacional</p>
           </button>
+          <!-- https://unsplash.com/es/fotos/eF7HN40WbAQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel3" aria-hidden="true">
@@ -173,13 +175,15 @@
           </div>
 
         </div>
-        <p class="servicios-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
-          facilis commodi. Doloremque mollitia est odit optio accusamus error placeat suscipit pariatur quam qui, maxime
-          dolore excepturi sapiente.</p>
+        <div class="servicios-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
+            facilis commodi. Doloremque mollitia est odit optio accusamus error placeat suscipit pariatur quam qui, maxime
+            dolore excepturi sapiente.</p>
+        </div>
       </div>
-      <div class="space-container col-md-6">
+      <!-- <div class="space-container col-md-6">
 
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -187,18 +191,20 @@
   <section id="revisarcvid">
     <!-- <h2>Revisa tu CV Gratis</h2>
     <button>Revisar CV -> ventana con texto descriptivo y abajo, mailto</button> -->
-    <div class="container-fluid row revisarcv">
-      <div class="space-container col-md-6">
+    <div class="revisarcv">
+      <!-- <div class="space-container">
 
-      </div>
-      <div class="revisa-container col-md-6">
+      </div> -->
+      <div class="revisacontainer">
         <h3 class="servicios-title">Revisa tu CV GRATIS</h3>
-        <p class="servicios-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
-          facilis commodi.</p>
+        <div class="servicios-text">
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
+            facilis commodi.</p>
+        </div>
         <br>
         <div class="revisar-btn d-flex justify-content-center">
           <!-- Button trigger modal Revisar CV GRATIS-->
-          <button type="button" class="btn btn-primary btn-revisar" data-bs-toggle="modal"
+          <button type="button" class="btn btn-revisar" data-bs-toggle="modal"
             data-bs-target="#staticBackdrop4">
             Revisar CV GRATIS
           </button>
