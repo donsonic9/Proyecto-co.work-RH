@@ -192,10 +192,6 @@ section {
   min-height: 500px;
 }
 
-/* .space-container .imgwork1 {
-  max-height: 500px;
-} */
-
 .about .space-container {
   background-image: url("images/vectores/Conocenos2.png");
   background-size: cover;
@@ -204,12 +200,9 @@ section {
 }
 
 .about-container {
-  /* background-color: var(--background); */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 10px solid var(--violet-color); */
-  /* border-radius: 10px; */
 }
 
 .about-title {
@@ -226,47 +219,7 @@ section {
   word-spacing: 2px;
 }
 
-/* Servicios */
-
-/* .servicios {
-  min-height: 500px;
-}
-
-.servicios-container {
-  background-color: var(--background);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.servicios-title {
-  margin-left: 8px;
-  font-weight: bold;
-  font-size: 4em;
-  letter-spacing: 2px;
-  margin: 30px;
-}
-
-.botones-servicios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 16px;
-}
-
-.botones-servicios button {
-  margin: 8px;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  min-width: 105px;
-}
-
-p.servicios-text {
-  margin-left: 6px;
-  font-size: 1.4em;
-  font-weight: 100;
-  word-spacing: 3px;
-} */
+/* ----------------------------------- Servicios -------------------------------------------------*/
 
 .servicios {
   min-height: 500px;
@@ -429,10 +382,17 @@ p.servicios-text {
   word-spacing: 3px;
 }
 
-/* Revisar CV GRATIS usa algunos estilos de Servicios */
+/*------------------- Revisar CV GRATIS usa algunos estilos de Conocenos (about) -----------------*/
 
 .revisarcv {
   min-height: 500px;
+}
+
+.revisarcv .space-container {
+  background-image: url("images/vectores/Revisa-tu-cv-gratis.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .revisa-container {
@@ -453,23 +413,28 @@ p.servicios-text {
 /* Footer / Contacto */
 
 footer {
-  padding-top: 120px;
+  padding-top: 60px;
   margin-top: 140px;
   /* glass effect */
   /* background: var(--shadow-4); */
   background: var(--black);
-  border-radius: 6px 6px;
+  /* border-radius: 6px 6px; */
   box-shadow: 1px 1px 4px 1px var(--shadow-4); 
   /* 0 4px 30px rgba(0, 0, 0, 0.1) */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
-.contacto {
+
+.contactologo {
   text-align: center;
-  color: var(--background);
   font-size: 2em;
   padding-bottom: 30px; 
+}
+
+.contactologo img {
+  min-width: 200px;
+  width: 20vw;
 }
 
 .iconos-redes-sociales a {
@@ -481,21 +446,21 @@ footer {
   padding: 20px;
   margin: 10px;
   /* border: 1px solid var(--almost-white); */
-  border-radius: 8px;
+  /* border-radius: 8px; */
   /* transition: all 0.2s ease; */
 }
 
 .iconos-redes-sociales a {
   color: var(--background);
   font-size: 2rem;
+  border: 3px solid transparent;
   transition: all 0.2s ease;
 }
 
 .iconos-redes-sociales a:hover {
-  transform: translateY(-2px);
-  background-color: var(--shadow-2);
-  border-bottom: 3px solid var(--light-blue-color);
-  color: var(--light-blue-color);
+  background-color: var(--pink-shadow-2);
+  border-radius: 3px;
+  border-bottom: 3px solid var(--background);
 }
 
 
@@ -513,7 +478,7 @@ footer {
 .derechos-de-autor {
   font-size: 15px;
   text-align: center;
-  color: var(--black);
+  color: var(--background);
   padding-bottom: 20px;
   opacity: 0.8;
 }
@@ -521,7 +486,7 @@ footer {
 .creador {
   font-size: 12px;
   text-align: center;
-  color: var(--black);
+  color: var(--background);
   padding-bottom: 20px;
   opacity: 0.5;
 }
@@ -597,7 +562,12 @@ footer {
   }
 
   .revisarcv .space-container {
-    height: 200px;
+    margin-top: 5vh;
+    height: 45vh;
+    background-image: url("images/vectores/Revisa-tu-cv-gratis.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
 
@@ -606,26 +576,9 @@ footer {
 @media screen and (max-width: 500px) {
 
   /* Servicios */
-  .botones-servicios {
-    transform: scale(0.8);
-  }
 
   .botones-servicios .btn-1, .botones-servicios .btn-2, .botones-servicios .btn-3 {
     margin-bottom: 0px;
-  }
-
-}
-
-@media screen and (max-width: 400px) {
-
-  /* Servicios */
-
-  .botones-servicios .btn-1, .botones-servicios .btn-2, .botones-servicios .btn-3 {
-    margin-bottom: 0px;
-  }
-
-  .botones-servicios {
-    transform: scale(0.78);
   }
 
 }
