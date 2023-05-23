@@ -6,15 +6,22 @@
   --light-brown-color: #ceb29c;
   --violet-color: #943cdc;
 
-  --background: #ffffff;
+  --background: #fdfdfd;
   --black: #1f1f1f;
   --shadow-2: #1f1f1f2f;
   --shadow-4: #1f1f1f4f;
   --shadow-6: #1f1f1f6f;
+  --shadow-8: #1f1f1f8f;
+  --shadow-10: #1f1f1fAf;
+
+  --pink-shadow-2: #ff55a42f;
+  --green-shadow-2: #9ba7212f;
+  --light-blue-shadow-2: #affef82f;
+
   --ilumination-2: #ffffff2f;
 
   /* imagen de fondo */
-  /* --img_fondo: url("images/random-tabbied-2-resized.png"); */
+  /* --img_fondo: url("images/prueba4.jpg"); */
 }
 
 /* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
@@ -27,7 +34,8 @@ body {
   /* background-image: var(--img_fondo); */
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: auto 100%;
   background-attachment: scroll;
 
   width: 100vw;
@@ -64,17 +72,25 @@ section {
   border-radius: 50px;
 }
 
-/* Navbar */
+/*----------------------------------------- Navbar ---------------------------------------------*/
 
 .navbar {
   width: 100%;
   padding: 0px;
   min-height: 60px;
   /* background-color: rgba(0, 0, 0, 0.05); */
-  background-color: var(--shadow-4);
+  background-color: var(--violet-color);
   /* background-color: var(--black); */
   border-radius: 0%;
   /* background-color: transparent !important; */
+}
+
+.nav-logo {
+  margin: 10px 10px 10px 30px;
+}
+
+.nav-logo img {
+  height: 60px;
 }
 
 .navbar button:focus {
@@ -84,7 +100,7 @@ section {
 .navbar-toggler i {
   /* border: 1px solid var(--light-blue-color); */
   font-size: 1.5em;
-  color: var(--light-blue-color)
+  color: var(--background)
 }
 
 .nav-link {
@@ -97,11 +113,13 @@ section {
 
 .nav-link:hover {
   background-color: var(--shadow-2);
-  border-bottom: 3px solid var(--light-blue-color);
-  color: var(--light-blue-color);
+  border-bottom: 3px solid var(--background);
+  color: var(--background);
 }
 
-/* logo slogan */
+
+
+/* --------------------------------  logo slogan ------------------------------------------ */
 
 .logo-slogan {
   /* margin-top: 0px; */
@@ -114,6 +132,7 @@ section {
   justify-content: center;
   position: relative;
   min-height: 500px;
+  height: 100vh;
   /* these 3 things avoid the scroll bar to appear on x-axis */
   width: 100vw;
   max-width: 100%;
@@ -128,11 +147,12 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url("images/hand-ge057fee27_1920_v2.jpg"); */
+  background-image: url("images/vectores/Banner-mirrored.png");
+  /* background-size: auto 100%; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  filter: grayscale(100%) brightness(50%);
+  background-position: top center;
+  filter: grayscale(100%) brightness(40%);
   z-index: -1;
 }
 
@@ -143,8 +163,9 @@ section {
 }
 
 .logo-main img {
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 370px;
+  max-height: 370px;
+  /* filter: brightness(200%); */
 }
 
 
@@ -161,42 +182,53 @@ section {
 }
 
 
-/* Conocenos section (about) */
+/*---------------------------- Conocenos section (about) -------------------------------------*/
+
+.whitespace {
+  height: 20vh;
+}
 
 .about {
   min-height: 500px;
 }
 
-.space-container .imgwork1 {
+/* .space-container .imgwork1 {
   max-height: 500px;
+} */
+
+.about .space-container {
+  background-image: url("images/vectores/Conocenos2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .about-container {
-  background-color: var(--background);
+  /* background-color: var(--background); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* border: 10px solid var(--violet-color); */
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .about-title {
   font-weight: bold;
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
 .about-text {
   margin-left: 6px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 100;
-  word-spacing: 3px;
+  word-spacing: 2px;
 }
 
 /* Servicios */
 
-.servicios {
+/* .servicios {
   min-height: 500px;
 }
 
@@ -231,8 +263,168 @@ section {
 
 p.servicios-text {
   margin-left: 6px;
-  /* padding: 40px; */
   font-size: 1.4em;
+  font-weight: 100;
+  word-spacing: 3px;
+} */
+
+.servicios {
+  min-height: 500px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicioscontainer {
+  min-height: 500px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-title {
+  margin-left: 8px;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.botones-servicios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Boton 1 */
+.botones-servicios .btn-1 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("images/vectores/Seleccion-de-personal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-1 p {
+  background: var(--shadow-10);
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 80px 100px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-1:hover p {
+  background: var(--pink-shadow-2);
+}
+
+
+/* Boton 2 */
+.botones-servicios .btn-2 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("images/vectores/Liquidacion-desueldos.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-2 p {
+  background: var(--shadow-10);
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 80px 100px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-2:hover p {
+  background: var(--light-blue-shadow-2);
+}
+
+/* Boton 3 */
+.botones-servicios .btn-3 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  text-align: center;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("images/vectores/Comunicacion-incorp.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-3 p {
+  background: var(--shadow-10);
+  
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 105px 80px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-3:hover p {
+  background: var(--green-shadow-2);
+}
+
+
+.servicios-text {
+  max-width: 60%;
+  margin: 30px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.servicios-text p {
+  margin-left: 6px;
+  font-size: 1.2em;
   font-weight: 100;
   word-spacing: 3px;
 }
@@ -265,7 +457,7 @@ footer {
   margin-top: 140px;
   /* glass effect */
   /* background: var(--shadow-4); */
-  background: var(--shadow-4);
+  background: var(--black);
   border-radius: 6px 6px;
   box-shadow: 1px 1px 4px 1px var(--shadow-4); 
   /* 0 4px 30px rgba(0, 0, 0, 0.1) */
@@ -336,12 +528,34 @@ footer {
 
 
 
-/* Media queries for responsivness */
+/* Media queries for responsivness -------------------------------------------------------------- */
 
 /* Pone los botones from row to column for screen sizes less than 768px */
 @media screen and (max-width: 768px) {
 
+  /* logo / slogan */
+
+  .banner-div {
+    height: 100vh;
+  }
+
+  .logo-main {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-main img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
   /* Conocenos */
+
+  .whitespace {
+    height: 0vh;
+  }
 
   .about {
     display: flex;
@@ -349,11 +563,17 @@ footer {
   }
 
   .about .space-container {
-    height: 200px;
+    margin-top: 5vh;
+    height: 45vh;
+    background-image: url("images/vectores/Conocenos2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .about-title {
     font-weight: bold;
+    text-align: center;
     font-size: 3em;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -367,20 +587,7 @@ footer {
 
   /* Servicios */
 
-  .servicios {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 
-  .servicios .space-container {
-    height: 200px;
-  }
-
-  .botones-servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 
   /* RevisarCV */
 
@@ -393,5 +600,32 @@ footer {
     height: 200px;
   }
 
+
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Servicios */
+  .botones-servicios {
+    transform: scale(0.8);
+  }
+
+  .botones-servicios .btn-1, .botones-servicios .btn-2, .botones-servicios .btn-3 {
+    margin-bottom: 0px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Servicios */
+
+  .botones-servicios .btn-1, .botones-servicios .btn-2, .botones-servicios .btn-3 {
+    margin-bottom: 0px;
+  }
+
+  .botones-servicios {
+    transform: scale(0.78);
+  }
 
 }

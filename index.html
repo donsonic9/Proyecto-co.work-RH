@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="images/Myproject-1(8)mod.png" type="image/x-icon">
+
 
   <title>co.work RH</title>
 </head>
@@ -24,7 +27,11 @@
   <div id="topid"></div>
   <!-- <navbar>botones de navgeacion a la derecha. FIJA</navbar> -->
   <nav class="navbar navbar-expand-md fixed-top glass">
+    
     <div class="container-fluid">
+      <a class="nav-logo" href="https://donsonic9.github.io/coworkrh.github.io/">
+        <img src="images/Myproject-1(7)mod.png" alt="co.work RH logo">
+      </a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -42,13 +49,13 @@
   </nav>
 
   <!-- Logo - Slogan -->
-  
+
   <section class="logo-slogan">
     <div class="banner-div">
       <div class="background-image"></div>
       <div class="row">
         <div class="logo-main col-12 col-md-5">
-          <img class="img-fluid" src="images/co.work-logo-beta-removebg-preview.png" alt="co.work RH main logo">
+          <img class="img-fluid" src="images/Logo-cowork-colores.png" alt="co.work RH main logo">
         </div>
         <div class="slogan-container col-12 col-md-6 d-flex justify-content-right">
           <h2 class="slogan-title">Tu socio estratégico en recursos humanos</h2>
@@ -56,16 +63,14 @@
       </div>
     </div>
   </section>
-  
+
 
   <!-- About / Conocenos! -->
   <section id="conocenosid">
-    <!-- <h2>conocenos derecha 1/2</h2>
-    <p>titulo arriba</p>
-    <p>twxto abajo</p> -->
+    <div class="whitespace"></div>
     <div class="container-fluid row about">
       <div class="space-container col-md-6">
-        <!-- <img class="imgwork1" src="images/New-employee-rafiki.png" alt=""> -->
+        <!-- <img class="imgwork1" src="images/vectores/Conocenos2.png" alt="Conocenos imagen"> -->
       </div>
       <div class="about-container col-md-6">
         <h3 class="about-title">Conocenos!</h3>
@@ -79,21 +84,16 @@
 
   <!-- Servicios -->
   <section id="serviciosid">
-    <!-- <h2> servicios abriendo ventanas modales con texto describiendo al servicio. 3 servicios a la izquierda.</h2>
-    <button>seleccion de personal -> ventana con texto descriptivo y abajo, mailto</button>
-    <button>liquidacion de sueldos -> ventana con texto descriptivo y abajo, mailto</button>
-    <button>Comunicacion organizacional -> ventana con texto descriptivo y abajo, mailto</button>
-    <p>breve descripcion con titulo "Servicios"</p> -->
     <div class="container-fluid row servicios">
-      <div class="servicios-container col-md-6">
+      <div class="servicioscontainer">
         <h3 class="servicios-title">Servicios</h3>
         <div class="botones-servicios">
-          <!-- <a href="mailto: jessicrepollo@gmail.com?subject=Revision%20de%20CV%20gratuita">Revisar CV Gratis</a> -->
 
           <!-- Button trigger modal Seleccion de personal-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-            Seleccion de Personal
+          <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            <p>Seleccion de Personal</p>
           </button>
+          
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel1" aria-hidden="true">
@@ -118,8 +118,8 @@
           </div>
 
           <!-- Button trigger modal Liquidación de sueldos-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-            Sueldos
+          <button type="button" class="btn btn-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            <p>Liquidación de Sueldos</p>
           </button>
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -145,9 +145,10 @@
           </div>
 
           <!-- Button trigger modal Seleccion de personal-->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-            In Corp
+          <button type="button" class="btn btn-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+            <p>Comunicación in corp.</p>
           </button>
+          <!-- https://unsplash.com/es/fotos/eF7HN40WbAQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel3" aria-hidden="true">
@@ -173,12 +174,11 @@
           </div>
 
         </div>
-        <p class="servicios-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
-          facilis commodi. Doloremque mollitia est odit optio accusamus error placeat suscipit pariatur quam qui, maxime
-          dolore excepturi sapiente.</p>
-      </div>
-      <div class="space-container col-md-6">
-
+        <div class="servicios-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
+            facilis commodi. Doloremque mollitia est odit optio accusamus error placeat suscipit pariatur quam qui, maxime
+            dolore excepturi sapiente.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -234,23 +234,23 @@
     <div class="container">
       <div class="contacto">Contactanos!</div>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a *ngIf="miContacto" href="https://wa.me/1234567890?text=Hello%20world" target="_blank" rel="noopener noreferrer">
+        <a *ngIf="miContacto" href="https://wa.me/1234567890?text=Hello%20world" target="_blank"
+          rel="noopener noreferrer">
           <i class="bi bi-whatsapp"></i>
-        </href=>
-        <a *ngIf="miContacto" href="cont.url_linkedin" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a *ngIf="miContacto" href="cont.url_facebook" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a *ngIf="miContacto" href="cont.url_youtube" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-youtube"></i>
-        </a>
+          </href=>
+          <a *ngIf="miContacto" href="cont.url_linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a *ngIf="miContacto" href="cont.url_facebook" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a *ngIf="miContacto" href="cont.url_youtube" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-youtube"></i>
+          </a>
       </div>
       <!-- Boton para volver al inicio de la página -->
       <div class="boton-up iconos-redes-sociales d-flex flex-row-reverse">
-        <a aria-current="page" title="Click para volver al inicio" href="#topid"><i
-            class="bi bi-arrow-up-circle"></i>
+        <a aria-current="page" title="Click para volver al inicio" href="#topid"><i class="bi bi-arrow-up-circle"></i>
         </a>
       </div>
       <div class="derechos-de-autor">co.work RH 2023 &#169;</div>
@@ -258,7 +258,7 @@
       <div class="creador">
         Website created by <a href="cont.url_linkedin" target="_blank" rel="noopener noreferrer">Repollo Alexander</a>
       </div>
-      
+
     </div>
   </footer>
 
