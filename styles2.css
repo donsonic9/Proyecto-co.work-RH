@@ -17,11 +17,12 @@
   --pink-shadow-2: #ff55a42f;
   --green-shadow-2: #9ba7212f;
   --light-blue-shadow-2: #affef82f;
+  --violet-shadow-2: #943cdc2f;
 
   --ilumination-2: #ffffff2f;
 
-  /* imagen de fondo */
-  /* --img_fondo: url("images/prueba4.jpg"); */
+  /* animations */
+  --navbar-visible: navbarVisible 1.2s ease 0.1s 1 normal;
 }
 
 /* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
@@ -160,6 +161,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: var(--navbar-visible);
 }
 
 .logo-main img {
@@ -458,7 +461,7 @@ footer {
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: var(--pink-shadow-2);
+  background-color: var(--violet-shadow-2);
   border-radius: 3px;
   border-bottom: 3px solid var(--background);
 }
@@ -489,6 +492,34 @@ footer {
   color: var(--background);
   padding-bottom: 20px;
   opacity: 0.5;
+}
+
+/*----------------------------------- Animations classes------------------------------*/
+
+.hiddenn {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+/* ----------------------------------Animation keyframes ---------------------------- */
+
+@keyframes navbarVisible {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 
