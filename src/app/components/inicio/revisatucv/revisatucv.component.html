@@ -1,0 +1,21 @@
+  <!-- Revisar CV -->
+  <section id="revisarcvid">
+    <div class="whitespace"></div>
+    <div class="container-fluid row revisarcv">
+      <div class="space-container col-md-7">
+
+      </div>
+      <div class="revisa-container col-md-5 hiddenn" [class.show]="isElementVisible">
+        <h2 class="about-title" *ngIf="datacoworkrh">{{datacoworkrh.revisacv.titulo}}</h2>
+        <!-- <p class="about-text" *ngIf="datacoworkrh">{{datacoworkrh.revisacv.breve_desc}}</p> -->
+        <br>
+        <div class="revisar-btn d-flex justify-content-center">
+          <!-- Button trigger modal Revisar CV GRATIS-->
+          <button type="button" class="btn btn-success btn-revisar" routerLink="revisar-cv">
+            Solicitar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "img_navbar": "assets/images/Myproject-1(7)mod.png"
+  },
+  "banner": {
+    "logo_banner": "assets/images/logo.png",
+    "slogan": "Tu socio estratégico en recursos humanos"
+  },
+  "conocenos": {
+    "titulo": "Conocenos!",
+    "descripcion": "Somos una sociedad de profesionales jóvenes y expertos. Apostamos a metodologías creativas e innovadoras para brindarte un servicio integrado de calidad en materia de Recursos Humanos. Somos apasionados por lo que hacemos.",
+    "titulomisionvision": "Misión y Visión: ",
+    "titulo2": "Nuestra Misión: ",
+    "descripcion2": "Nuestra Misión: ser el mejor socio estratégico para nuestros clientes brindando constante asesoramiento y acompañamiento que avalan la calidad y transparencia de nuestra gestión, tanto para empresas como personas. Brindar una experiencia personalizada que se refleje en los resultados. ",
+    "titulo3": "Nuestra Visión: ",
+    "descripcion3": "Nuestra Visión: ser referentes a nivel nacional en la detección, integración y retención de talento. Brindar herramientas a personas y compañías para explotar sus mejores cualidades."
+  },
+  "servicios": {
+    "titulo_boton1": "Selección de Personal",
+    "descripcion1": "Ponemos a disposición nuestra entrega y conocimientos para encontrar al candidato que se ajuste a las necesidades de la organización. Incluye seguimiento personalizado para cada caso.",
+    "email1": "mailto:co.workrh@gmail.com?subject=Selección%20de%20Personal",
+    "titulo_boton2": "Liquidación de Sueldos",
+    "descripcion2": "Nos hacemos cargo de todo lo inherente al proceso de liquidación de sueldos y jornales y respondemos las consultas de tu staff.",
+    "email2": "mailto:co.workrh@gmail.com?subject=Liquidación%20de%20Sueldos",
+    "titulo_boton3": "Comunicación in company",
+    "descripcion3": "Nuestros profesionales en materia de comunicación interna aplicarán técnicas y herramientas que se ajustan a las necesidades de tu organización con el fin de que todo el staff esté conectado, reciban de manera eficaz y eficiente la información y desarrollen la identidad empresarial. ",
+    "email3": "mailto:co.workrh@gmail.com?subject=Comunicación%20In%20Company"
+  },
+  "revisacv": {
+    "titulo": "Revisa tu CV GRATIS",
+    "descripcion": " Envianos tu CV en formato PDF y te responderemos a la brevedad con la devolución sobre el mismo. En caso de ser necesario, se realizan sugerencias sobre mejoras a nivel redacción y estructura. Si deseas que lo armemos desde cero para vos consultanos por más información! ",
+    "email4": "mailto:co.workrh@gmail.com?subject=Revisar%20CV%20Gratis"
+  },
+  "footer": {
+    "wpp_url": "https://wa.link/3g2e19",
+    "email_empresa": "co.workrh@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/co-work-rh/",
+    "facebook_url": "https://www.facebook.com/profile.php?id=100092023014506",
+    "instagram_url": "https://www.instagram.com/co.workrh/",
+    "creator": "https://www.linkedin.com/in/alexander-repollo-5b47841ba/"
+  }
+}

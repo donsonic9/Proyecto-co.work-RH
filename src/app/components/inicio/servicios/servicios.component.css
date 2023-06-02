@@ -1,0 +1,172 @@
+/* ----------------------------------- Servicios -------------------------------------------------*/
+
+.servicios {
+  min-height: 500px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicioscontainer {
+  min-height: 500px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-title {
+  margin-left: 8px;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.botones-servicios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Boton 1 */
+.botones-servicios .btn-1 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("../../../../assets/images/vectores/Seleccion-de-personal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-1 p {
+  background: var(--shadow-10);
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 80px 100px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-1:hover p {
+  background: var(--pink-shadow-2);
+}
+
+
+/* Boton 2 */
+.botones-servicios .btn-2 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("../../../../assets/images/vectores/Liquidacion-desueldos.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-2 p {
+  background: var(--shadow-10);
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 80px 100px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-2:hover p {
+  background: var(--light-blue-shadow-2);
+}
+
+/* Boton 3 */
+.botones-servicios .btn-3 {
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 300px;
+  max-height: 350px;
+  text-align: center;
+  
+  padding: 0;
+  border-radius: 10px;
+
+  background-image: url("../../../../assets/images/vectores/Comunicacion-incorp.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  overflow: hidden; 
+  color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.btn-3 p {
+  background: var(--shadow-10);
+  
+  text-shadow: 0px 0px 6px var(--black);
+  font-size: 2em;
+  font-weight: 500;
+  padding: 105px 80px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-3:hover p {
+  background: var(--green-shadow-2);
+}
+
+
+.servicios-text {
+  max-width: 60%;
+  margin: 30px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.servicios-text p {
+  margin-left: 6px;
+  font-size: 1.2em;
+  font-weight: 100;
+  word-spacing: 3px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 500px) {
+  /* Servicios */
+
+  .botones-servicios .btn-1, .botones-servicios .btn-2, .botones-servicios .btn-3 {
+    margin-bottom: 0px;
+  }
+}

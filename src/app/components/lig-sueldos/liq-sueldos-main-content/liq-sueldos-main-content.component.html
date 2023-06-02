@@ -1,0 +1,23 @@
+<!-- Revisar CV -->
+<section id="revisarcvid">
+  <div class="whitespace"></div>
+  <div class="container-fluid revisarcv">
+    <div class="space-container">
+
+    </div>
+    <div class="revisacontainer">
+      <h2 class="about-title" *ngIf="datacoworkrh">{{datacoworkrh.servicios.titulo_boton2}}</h2>
+      <p class="about-text" *ngIf="datacoworkrh">{{datacoworkrh.servicios.descripcion2}}</p>
+      <br>
+      <div class="revisar-btn d-flex justify-content-center">
+        <!-- Button trigger Liquidacion de sueldos-->
+        
+        <a type="button" class="btn btn-light border-secondary-subtle btn-revisar" routerLink="">Volver</a>
+        <a type="button" class="btn btn-success btn-revisar" *ngIf="datacoworkrh" [href]="datacoworkrh.servicios.email2">Solicitar Servcicio</a>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+

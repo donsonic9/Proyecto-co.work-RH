@@ -1,0 +1,29 @@
+  <!-- Footer / Contact -->
+  <footer id="contactoid">
+    <div class="container">
+      <div class="contactologo">
+        <img *ngIf="datacoworkrh" [src]="datacoworkrh.banner.logo_banner" alt="co.work RH Contacto Logo" loading="lazy">
+      </div>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          <a *ngIf="datacoworkrh" [href]="datacoworkrh.footer.wpp_url" target="_blank"
+         title="Mandanos un WhatsApp!">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a *ngIf="datacoworkrh" [href]="datacoworkrh.footer.linkedin_url" target="_blank" title="Visitanos en LinkedIn!">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a *ngIf="datacoworkrh" [href]="datacoworkrh.footer.facebook_url" target="_blank" title="Visitanos en Facebook!">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a *ngIf="datacoworkrh" [href]="datacoworkrh.footer.instagram_url" target="_blank" title="Seguinos en Instagram!">
+            <i class="bi bi-instagram"></i>
+          </a>
+      </div>
+      <div class="derechos-de-autor">co.work RH 2023 &#169;</div>
+      <br>
+      <div class="creador">
+        Website created by <a *ngIf="datacoworkrh" [href]="datacoworkrh.footer.creator" target="_blank">Repollo Alexander</a>
+      </div>
+
+    </div>
+  </footer>

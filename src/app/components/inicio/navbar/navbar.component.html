@@ -1,0 +1,23 @@
+
+  <!-- <navbar>botones de navgeacion a la derecha. FIJA</navbar> -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    
+    <div class="container-fluid">
+      <a class="nav-logo" (click)="onReload()">
+        <img *ngIf="datacoworkrh" [src]="datacoworkrh.navbar.img_navbar" alt="co.work RH logo" loading="lazy">
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" (click)="toConocenos()" role="button" href="#navbarNavAltMarkup"  data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarNavAltMarkup">Conocenos</a>
+          <a class="nav-link" (click)="toServicios()" role="button" href="#navbarNavAltMarkup"  data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarNavAltMarkup">Servicios</a>
+          <a class="nav-link" (click)="toRevisarCv()" role="button" href="#navbarNavAltMarkup"  data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarNavAltMarkup">Revisa tu cv gratis</a>
+          <a class="nav-link" (click)="toContacto()" role="button" href="#navbarNavAltMarkup"  data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarNavAltMarkup">Contcato</a>
+        </div>
+      </div>
+    </div>
+  </nav>

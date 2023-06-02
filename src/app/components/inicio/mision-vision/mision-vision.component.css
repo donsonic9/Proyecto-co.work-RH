@@ -1,0 +1,97 @@
+/*---------------------------- Conocenos section (about) -------------------------------------*/
+
+.whitespace {
+  height: 20vh;
+}
+
+.aboutt {
+  min-height: 500px;
+}
+
+.aboutt .space-container {
+  background-image: url("../../../../assets/images/vectores/Conocenos2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.aboutt .space-container2 {
+  background-image: url("../../../../assets/images/vectores/Conocenos1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-left: 6px;
+  font-size: 1.2em;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+  /* Conocenos */
+
+  .whitespace {
+    height: 0vh;
+  }
+
+  .aboutt {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  .aboutt .space-container {
+    margin-top: 5vh;
+    height: 45vh;
+    /* background-image: url("images/vectores/Conocenos2.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .aboutt .space-container2 {
+    margin-top: 5vh;
+    height: 45vh;
+    /* background-image: url("images/vectores/Conocenos1.png"); */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* order: 0; */
+  }
+
+  /* .textoabout {
+    order: 1;
+  } */
+
+  .about-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    margin-left: 6px;
+    font-size: 1.1em;
+    word-spacing: 2px;
+  }
+}

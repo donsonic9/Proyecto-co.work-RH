@@ -1,0 +1,82 @@
+/*------------------- Revisar CV GRATIS usa algunos estilos de Conocenos (about) -----------------*/
+
+.whitespace {
+  height: 20vh;
+}
+
+.revisarcv {
+  min-height: 500px;
+}
+
+.revisarcv .space-container {
+  background-image: url("../../../../assets/images/vectores/Revisa-tu-cv-gratis.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.revisa-container {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-revisar {
+  scale: 1.4;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-left: 6px;
+  font-size: 1.2em;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+
+  
+  /* RevisarCV */
+
+  .whitespace {
+    height: 0vh;
+  }
+  
+  .revisarcv {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .revisarcv .space-container {
+    margin-top: 5vh;
+    height: 45vh;
+    /* background-image: url("images/vectores/Revisa-tu-cv-gratis.png"); */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .about-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    margin-left: 6px;
+    font-size: 1.1em;
+    word-spacing: 2px;
+  }
+  
+}

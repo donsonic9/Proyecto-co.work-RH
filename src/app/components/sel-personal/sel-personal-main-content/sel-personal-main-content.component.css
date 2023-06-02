@@ -1,0 +1,100 @@
+/*------------------- Revisar CV GRATIS usa algunos estilos de Conocenos (about) -----------------*/
+
+#revisarcvid {
+  margin-top: 80px;
+}
+
+.revisarcv {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.revisarcv .space-container {
+  margin-top: 5vh;
+  height: 45vh;
+  background-image: url("../../../../assets/images/vectores/Seleccion-de-personal.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.revisacontainer {
+  background-color: var(--background);
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-left: 6px;
+  font-size: 1.2em;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+
+.revisar-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.btn-revisar {
+  scale: 1.3;
+  margin: 16px auto;
+}
+
+/* --------------------------- Media Query for responsivness ---------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* RevisarCV */
+
+  .revisarcv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .revisarcv .space-container {
+    margin-top: 5vh;
+    height: 45vh;
+    /* background-image: url("../images/vectores/Revisa-tu-cv-gratis.png"); */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .revisacontainer {
+    background-color: var(--background);
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    margin-left: 6px;
+    font-size: 1.1em;
+    word-spacing: 2px;
+  }
+}

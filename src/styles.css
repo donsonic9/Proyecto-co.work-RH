@@ -1,1 +1,105 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Colores */
+  --green-color: #9ba721;
+  --pink-color: #ff55a4;
+  --light-blue-color: #affef8;
+  --light-brown-color: #ceb29c;
+  --violet-color: #943cdc;
+
+  --background: #fdfdfd;
+  --black: #1f1f1f;
+  --shadow-2: #1f1f1f2f;
+  --shadow-4: #1f1f1f4f;
+  --shadow-6: #1f1f1f6f;
+  --shadow-8: #1f1f1f8f;
+  --shadow-10: #1f1f1fAf;
+
+  --pink-shadow-2: #ff55a42f;
+  --green-shadow-2: #9ba7212f;
+  --light-blue-shadow-2: #affef82f;
+  --violet-shadow-2: #943cdc2f;
+
+  --ilumination-2: #ffffff2f;
+
+  /* animations */
+  --navbar-visible: navbarVisible 1.2s ease 0.1s 1 normal;
+}
+
+/* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: var(--background);
+  /* background-image: var(--img_fondo); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: cover; */
+  background-size: auto 100%;
+  background-attachment: scroll;
+
+  width: 100vw;
+  max-width: 100%;
+
+  font-family: 'Roboto', sans-serif;
+  /* transition: all 0.2s ease;  */
+}
+
+/* Estilos generales */
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.glass {
+  background: var(--shadow-2);
+  border-radius: 6px 6px;
+  box-shadow: 1px 1px 4px 1px var(--shadow-4); 
+  /* 0 4px 30px rgba(0, 0, 0, 0.1) */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+/*----------------------------------- Animations classes------------------------------*/
+
+.hiddenn {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-25%);
+  transition: opacity 1s ease, filter 1s ease, transform 1s ease;
+  transition-delay: 0.4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* ----------------------------------Animation keyframes ---------------------------- */
+
+@keyframes navbarVisible {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}

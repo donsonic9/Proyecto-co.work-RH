@@ -1,0 +1,14 @@
+<!-- About / Conocenos! -->
+<section id="conocenosid">
+  <div class="whitespace"></div>
+  <div class="container-fluid row about">
+    <div class="space-container col-md-6">
+    </div>
+    <div class="about-container col-md-6 hiddenn" [class.show]="isElementVisible">
+      <h2 class="about-title" *ngIf="datacoworkrh">{{datacoworkrh.conocenos.titulo}}</h2>
+      <p class="about-text" *ngIf="datacoworkrh">{{datacoworkrh.conocenos.descripcion}}</p>
+    </div>
+  </div>
+</section>
+
+

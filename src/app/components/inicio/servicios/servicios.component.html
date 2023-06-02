@@ -1,0 +1,31 @@
+<!-- Servicios -->
+<section id="serviciosid">
+  <div class="container-fluid row servicios">
+    <div class="servicioscontainer">
+      <h2 class="servicios-title">Servicios</h2>
+      <div class="botones-servicios hiddenn" [class.show]="isElementVisible">
+
+        <!-- Button trigger modal Seleccion de personal-->
+        <button type="button" class="btn btn-1" routerLink="/seleccion-de-personal" *ngIf="datacoworkrh">
+          <p>{{datacoworkrh.servicios.titulo_boton1}}</p>
+        </button>
+        
+        <!-- Button trigger modal Liquidación de sueldos-->
+        <button type="button" class="btn btn-2" routerLink="/liquidacion-sueldos" *ngIf="datacoworkrh">
+          <p>{{datacoworkrh.servicios.titulo_boton2}}</p>
+        </button>
+
+        <!-- Button trigger modal Seleccion de personal-->
+        <button type="button" class="btn btn-3" routerLink="/comunicacion-in-corp" *ngIf="datacoworkrh">
+          <p>{{datacoworkrh.servicios.titulo_boton3}}</p>
+        </button>
+
+      </div>
+      <div class="servicios-text">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum quam et
+          facilis commodi. Doloremque mollitia est odit optio accusamus error placeat suscipit pariatur quam qui, maxime
+          dolore excepturi sapiente.</p> -->
+      </div>
+    </div>
+  </div>
+</section>
